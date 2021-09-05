@@ -6,3 +6,4 @@ To DO:
 - [ ] Store trivia in JSON or other format. (Array of sets?)
 - [ ] 2 Hint system. The hint should remove one **incorrect** answer from the list of choices. At the end, the player should only have **two choices**: The right one and the wrong one.
 - [ ] Score system. Might not use `localStorage` and instead reset on refresh.
+- [ ] **When all is said and done:** add graphics.
