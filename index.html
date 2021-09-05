@@ -17,13 +17,23 @@
         <section id="triv-sect" class="centeredtext gap-top">
             <h2 id="quote">Test.</h2>
             <div id="answer-grid" class="gap-top">
-                <button id="2D">2D</button>
-                <button id="Murdoc">Murdoc</button>
-                <button id="Russel">Russel</button>
-                <button id="Noodle">Noodle</button>
+                <button id="2D" onclick='checkAnswer("2D")' class="choice">2D</button>
+                <button id="Murdoc" onclick='checkAnswer("Murdoc")' class="choice">Murdoc</button>
+                <button id="Russel" onclick='checkAnswer("Russel")' class="choice">Russel</button>
+                <button id="Noodle" onclick='checkAnswer("Noodle")' class="choice">Noodle</button>
             </div>
         </section>
     </section>
+
+    <!-- Call the band member scripts first. -->
+    <script src="./2D.js"></script>
+    <script src="./Murdoc.js"></script>
+    <script src="./Russel.js"></script>
+    <script src="./Noodle.js"></script>
+
+    <!-- Keeping "randomize" and other functions that may be useful in numFuncs.js -->
+    <script src="./numFuncs.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>

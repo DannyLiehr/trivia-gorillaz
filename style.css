@@ -26,10 +26,79 @@ h1{
     justify-content: space-evenly;
 }
 
+/* Preddy decor for the quotes */
+
+#quote{
+    font-family: serif;
+}
+#quote::before, #quote::after{
+    z-index: -4;
+    margin: calc(-.2em);
+    font-size: calc(3em);
+    position: relative;
+    top: .2em;
+    color: rgba(0, 0, 0, 0.15);
+}
+
+#quote::before{
+    content:"\201C";
+}
+#quote::after{
+    content:"\201D";
+}
+
 button{
     padding: calc(3em);
 }
 
+/* Shake button animation */
+
+@keyframes shake {
+    0%{
+        transform: rotate(5deg);
+    }
+    25%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    75%{
+        transform: rotate(-5deg);
+    }
+
+}
+
+@keyframes pop {
+    from{
+        transform: scale(1.2);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.correct, .incorrect, .choice{
+    transition: .2s;
+}
+
+.correct{
+    background: lime;
+    animation-name: pop;
+    animation-duration: .2s;
+    animation-iteration-count: 1;
+}
+
+.incorrect{
+    background: red;
+    animation-name: shake;
+    animation-duration: .2s;
+    animation-iteration-count: 2;
+}
+
+.choice{
+    background: powderblue;
+}
 
 .centeredcontent{
     margin: 0 auto;
@@ -44,5 +113,5 @@ button{
 }
 
 .gap-top{
-    margin-top: calc(5vh);    
+    margin-top: calc(5vh);
 }
