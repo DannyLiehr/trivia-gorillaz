@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+body{
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+
+#wrapper{
+    border: 1px solid black;
+    width: 75vw;
+    padding: calc(5%);
+}
+
+#answer-grid{
+    display: grid;
+    grid-template-columns: repeat(2, calc(10em));
+    grid-gap: calc(10em);
+    justify-content: space-evenly;
+}
+
+button{
+    padding: calc(3em);
+}
+
+
+.centeredcontent{
+    margin: 0 auto;
+}
+
+.centeredtext{
+    text-align: center;
+}
+
+.autowidth{
+    width:auto;
+}
+
+.gap-top{
+    margin-top: calc(5vh);    
+}
