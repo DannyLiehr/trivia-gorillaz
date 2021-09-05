@@ -3,5 +3,5 @@
 
 var twoDeeQuotes=[
     // Nothing TOO out of context. Should still be guessible.
-    {quote: "I think dogs should vote.", source: "Dude trust me"}
+    {quote: "Meme what you say. And always be your selfie.", source: "The Now Now (Interview)"}
 ]

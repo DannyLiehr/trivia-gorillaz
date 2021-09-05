@@ -14,7 +14,6 @@ h1{
 
 
 #wrapper{
-    border: 1px solid black;
     width: 75vw;
     padding: calc(5%);
 }
