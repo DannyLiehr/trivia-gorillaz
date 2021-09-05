@@ -3,5 +3,7 @@
 
 var russelQuotes=[
     // Nothing TOO out of context. Should still be guessible.
-    {quote: "What if I filled a grain silo with 8-track cassette tapes? What then?", source: "He never said this"}
+    {quote: "You gonna pay peanuts, you gonna get monkeys.", source: "Unknown"},
+    {quote: "Stupid is the new clever.", source: "Unknown"},
+    {quote: "You've got to be a diplomat to be a musician.", source: "The Now Now (citation needed)"},
 ]

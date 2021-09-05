@@ -14,17 +14,20 @@ function checkAnswer(id){
     if (id == chosenBandMember){
         // Right answer
         document.getElementById(id).className="correct";
+
     } else {
         // console.log("Wrong.")
         document.getElementById(id).className="incorrect";
         document.getElementById(chosenBandMember).className="correct";
     }
+    document.getElementById("avatar").src=`./img/${chosenBandMember}.gif`;
     setTimeout(function(){ trivia(); }, 2000);
 }
 
 function trivia(){
     for (i in candidates){
         document.getElementById(candidates[i]).className="choice";
+        document.getElementById("avatar").src=`./img/no_one.png`;
     }
     switch(randomize(candidates)){
         case "2D":

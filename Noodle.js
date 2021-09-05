@@ -3,5 +3,7 @@
 
 var noodleQuotes=[
     // Nothing TOO out of context. Should still be guessible.
-    {quote: "Murdoc wets the bed often.", source: "Some interview most likely"}
+    {quote: "...Then I screamed over the top.", source: "Unknown (Rise of the Ogre most likely)"},
+    {quote: "To know the road ahead, ask those coming back.", source: "The Now Now (Interview) (This is also a famous proverb)"},
+    {quote: "To me, music is like energy. It can neither be created or destroyed, only discovered and abandoned.", source: "The Now Now (Interview, citation needed)"},
 ]

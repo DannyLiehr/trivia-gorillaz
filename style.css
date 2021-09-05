@@ -6,6 +6,7 @@
 }
 body{
     font-family: sans-serif;
+    background: gainsboro;
 }
 
 h1{
@@ -28,22 +29,40 @@ h1{
 /* Preddy decor for the quotes */
 
 #quote{
-    font-family: serif;
-}
-#quote::before, #quote::after{
-    z-index: -4;
-    margin: calc(-.2em);
-    font-size: calc(3em);
+    background: ghostwhite;
+    color: black;
+    display: inline-block;
+    line-height: 2em;
+    margin-bottom: 1em;
+    padding: .2em 1em;
     position: relative;
-    top: .2em;
-    color: rgba(0, 0, 0, 0.15);
-}
+    text-align: center;
+    vertical-align: top;
+    min-width: 7em;
+    border-radius: 10px;
+    max-width: 25em;
+    min-height: 2em;
+    font-size: 1.25em;
 
-#quote::before{
-    content:"\201C";
 }
 #quote::after{
-    content:"\201D";
+    border: 1em solid transparent;
+	border-top-color: ghostwhite;
+	content: '';
+	margin-left: -1em;
+	position: absolute;
+		top: 30%;
+		left: 100%;
+	width: 0;
+	height: 0;
+}
+
+#avatar{
+    width: calc(6em);
+    height: calc(6em);
+    background: transparent;
+    border-radius: 50%;
+    color: ghostwhite;
 }
 
 button{
@@ -97,6 +116,7 @@ button{
 
 .choice{
     background: powderblue;
+    border-radius: 25%;
 }
 
 .centeredcontent{

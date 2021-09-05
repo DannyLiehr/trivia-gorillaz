@@ -14,8 +14,11 @@
         <h1>Who Said That?</h1>
         <hr/>
         <!-- Don't abuse divs. -->
-        <section id="triv-sect" class="centeredtext gap-top">
-            <h2 id="quote">Test.</h2>
+        <section id="triv-sect" class="centeredtext centeredcontent gap-top">
+            <div style="display:grid; grid-template-columns: 30em 2em; justify-content: space-evenly; justify-items: center; align-content: space-evenly; align-items: center;">
+            <div id="quote">Test.</div>
+            <img src="./img/no_one.png" id="avatar">
+        </div>
             <div id="answer-grid" class="gap-top">
                 <button id="2D" onclick='checkAnswer("2D")' class="choice">2D</button>
                 <button id="Murdoc" onclick='checkAnswer("Murdoc")' class="choice">Murdoc</button>
