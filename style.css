@@ -1,3 +1,11 @@
+:root{
+    --bg: rgb(237, 109, 165);
+    --button: rgb(219, 53, 108);
+    --button2: rgb(249, 83, 138);
+    --right: rgb(128, 196, 55);
+    --wrong: rgb(225, 0, 0);
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -6,7 +14,7 @@
 }
 body{
     font-family: sans-serif;
-    background: gainsboro;
+    background: var(--bg);
 }
 
 h1{
@@ -17,6 +25,9 @@ h1{
 #wrapper{
     width: 75vw;
     padding: calc(5%);
+    background: rgb(200,200,200);
+    position: relative;
+    top: calc(15vh);
 }
 
 #answer-grid{
@@ -57,16 +68,19 @@ h1{
 	height: 0;
 }
 
-#avatar{
+.avatar{
     width: calc(6em);
     height: calc(6em);
     background: transparent;
     border-radius: 50%;
     color: ghostwhite;
+    transition: .1s;
+    display: none;
 }
 
 button{
     padding: calc(3em);
+    border-radius: 25%;
 }
 
 /* Shake button animation */
@@ -101,22 +115,27 @@ button{
 }
 
 .correct{
-    background: lime;
+    background: var(--right);
     animation-name: pop;
     animation-duration: .2s;
     animation-iteration-count: 1;
 }
 
 .incorrect{
-    background: red;
+    background: var(--wrong);
     animation-name: shake;
     animation-duration: .2s;
     animation-iteration-count: 2;
 }
 
 .choice{
-    background: powderblue;
-    border-radius: 25%;
+    background: var(--button);
+    color: white;
+    /* font-size: calc(1.2em) */
+}
+
+.choice:hover{
+    background: var(--button2);
 }
 
 .centeredcontent{
@@ -133,4 +152,7 @@ button{
 
 .gap-top{
     margin-top: calc(5vh);
+}
+.top, .bottom{
+    position: absolute;
 }

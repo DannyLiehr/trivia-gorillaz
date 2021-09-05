@@ -20,14 +20,16 @@ function checkAnswer(id){
         document.getElementById(id).className="incorrect";
         document.getElementById(chosenBandMember).className="correct";
     }
-    document.getElementById("avatar").src=`./img/${chosenBandMember}.gif`;
+    document.getElementById("avatar").style.opacity=0;
+    document.getElementById("bandMem").src=`./img/${chosenBandMember}.gif`;
     setTimeout(function(){ trivia(); }, 2000);
 }
 
 function trivia(){
     for (i in candidates){
         document.getElementById(candidates[i]).className="choice";
-        document.getElementById("avatar").src=`./img/no_one.png`;
+        document.getElementById("avatar").style.opacity=1;
+        document.getElementById("bandMem").src=`./img/no_one.png`;
     }
     switch(randomize(candidates)){
         case "2D":
